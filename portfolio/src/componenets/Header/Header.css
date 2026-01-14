@@ -59,7 +59,47 @@
    color: #000000;
 }
 
-/* Mobile Styles */
+/* ================= MOBILE ================= */
+@media (max-width: 768px) {
+
+  .menu-btn {
+    display: block;
+  }
+
+  .nav-center {
+    position: absolute;
+    top: 100%;
+    left: 0;
+
+    width: 100%;
+    background: #ffffff;
+    border-bottom: 1px solid #222;
+
+    flex-direction: column;
+    align-items: center;
+    gap: 1.2rem;
+
+    padding: 1.5rem 0;
+
+    /* 🔥 Animation setup */
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(-10px);
+
+    transition:
+      max-height 0.4s ease,
+      opacity 0.3s ease,
+      transform 0.3s ease;
+  }
+
+  .nav-center.open {
+    max-height: 400px;          /* enough to show all links */
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* Mobile Styles 
 @media (max-width: 768px) {
 
   .nav-center {
@@ -85,4 +125,5 @@
   .menu-btn {
     display: block;
   }
-}
+}*/
+
