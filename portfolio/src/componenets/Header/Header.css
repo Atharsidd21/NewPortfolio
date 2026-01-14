@@ -2,8 +2,8 @@
   position: fixed;
   top: 0;
   width: 100%;
-  background: #000000;
-  border-bottom: 1px solid #222;
+  background: #ffffff;
+  border-bottom: 1px solid #ffffff;
   z-index: 1000;
 }
 
@@ -21,7 +21,7 @@
 .logo {
   font-size: 1.5rem;
   font-weight: 700;
-  color: #ffffff;
+  color: #000000;
 }
 
 /* Center */
@@ -33,7 +33,7 @@
 
 .nav-center a {
   text-decoration: none;
-  color: #ffffff;
+  color: #000000;
   font-size: 0.95rem;
   font-weight: 500;
   transition: color 0.3s ease;
@@ -56,7 +56,7 @@
   border: none;
   font-size: 1.6rem;
   cursor: pointer;
-   color: #fff;
+   color: #000000;
 }
 
 /* Mobile Styles */
@@ -67,7 +67,7 @@
     top: 100%;
     left: 0;
     width: 100%;
-    background: rgb(0, 0, 0);
+    background: rgb(255, 255, 255);
 
     flex-direction: column;
     align-items: center;
@@ -75,7 +75,7 @@
 
     padding: 1.5rem 0;
     display: none;
-    border-bottom: 1px solid #222;
+    border-bottom: 1px solid #ffffff;
   }
 
   .nav-center.open {
