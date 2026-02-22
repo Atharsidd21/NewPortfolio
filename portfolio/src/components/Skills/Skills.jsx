@@ -25,7 +25,7 @@ const Skills = () => {
        <FadeIn>
 
       <h2 className="skills-title">
-        My <span className="accent">Skill Set </span>
+        Tech & <span className="accent">Creative Stack </span>
       </h2>
 
       <div className="skills-grid">
