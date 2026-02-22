@@ -10,11 +10,11 @@
 .nav {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 1rem 1.5rem;
+  padding: 1rem 2rem;
 
   display: flex;
   align-items: center;
-  justify-content: space-between;
+ 
 }
 
 /* Left */
@@ -26,9 +26,9 @@
 
 /* Center */
 .nav-center {
-  display: flex;
-  gap: 2rem;
-  list-style: none;
+   position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .nav-center a {
@@ -58,7 +58,28 @@
   cursor: pointer;
    color: #000000;
 }
+.nav-left,
+.nav-center,
+.nav-right {
+  flex: 1;
+}
 
+.nav-left {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.nav-center {
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+  list-style: none;
+}
+
+.nav-right {
+  display: flex;
+  justify-content: flex-end;
+}
 /* ================= MOBILE ================= */
 @media (max-width: 768px) {
 

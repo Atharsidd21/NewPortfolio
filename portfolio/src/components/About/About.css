@@ -1,0 +1,61 @@
+.about {
+  padding: 6rem 15rem;
+  background: #000;
+}
+
+.about-container {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Title */
+.about-title {
+  font-size: clamp(2rem, 5vw, 2.8rem);
+  margin-bottom: 2.5rem;
+}
+
+.about-title .accent {
+  color: #00ff7f;
+}
+
+/* Paragraph */
+.about-text {
+  font-size: clamp(1rem, 2vw, 1.1rem);
+  line-height: 1.9;
+  color: #ccc;
+}
+
+/* ================= LARGE DESKTOP ================= */
+@media (min-width: 1400px) {
+  .about-container {
+    max-width: 1000px;
+  }
+}
+
+/* ================= TABLET ================= */
+@media (max-width: 992px) {
+  .about {
+    padding: 5rem 1.5rem;
+  }
+
+  .about-text {
+    font-size: 1rem;
+  }
+}
+
+/* ================= MOBILE ================= */
+@media (max-width: 600px) {
+  .about {
+    padding: 4rem 1.2rem;
+  }
+
+  .about-title {
+    margin-bottom: 2rem;
+  }
+
+  .about-text {
+    font-size: 0.95rem;
+    line-height: 1.8;
+  }
+}
