@@ -1,5 +1,5 @@
 import "./Skills.css";
-import SkillCard from "./SkillCard";
+import FadeIn from "../FadeIn/FadeIn";
 
 import unity from "../../assets/skills/unity.png";
 import unreal from "../../assets/skills/unreal.png";
@@ -9,44 +9,36 @@ import cpp from "../../assets/skills/cpp.png";
 import premiere from "../../assets/skills/premiere.png";
 import python from "../../assets/skills/python.png";
 
-const skills = {
-  "Game Development": [
-    { name: "Unity", image: unity },
-    { name: "Unreal Engine", image: unreal },
-    { name: "C#", image: csharp },
-    { name: "C++", image: cpp },
-  ],
-  "3D & Animation": [
-    { name: "Blender", image: blender },
-     { name: "Python", image: python },
-  ],
-  "Editing & Content": [
-    { name: "Adobe Premiere Pro", image: premiere },
-  ],
-};
+const skills = [
+  { name: "Unity", image: unity },
+  { name: "Unreal Engine", image: unreal },
+  { name: "Blender", image: blender },
+  { name: "Adobe Premiere", image: premiere },
+  { name: "C#", image: csharp },
+  { name: "C++", image: cpp },
+  { name: "Python", image: python },
+];
 
 const Skills = () => {
   return (
     <section id="skills" className="skills">
+       <FadeIn>
+
       <h2 className="skills-title">
-        My <span className="accent">Skills</span>
+        My <span className="accent">Skill Set </span>
       </h2>
 
-      {Object.entries(skills).map(([category, items]) => (
-        <div className="skills-category" key={category}>
-          <h3 className="category-title">{category}</h3>
-
-          <div className="skills-grid">
-            {items.map((skill) => (
-              <SkillCard
-                key={skill.name}
-                name={skill.name}
-                image={skill.image}
-              />
-            ))}
+      <div className="skills-grid">
+        {skills.map((skill) => (
+          <div className="skill-card" key={skill.name}>
+            <div className="icon-wrapper">
+              <img src={skill.image} alt={skill.name} />
+            </div>
+            <p>{skill.name}</p>
           </div>
-        </div>
-      ))}
+        ))}
+      </div>
+        </FadeIn>
     </section>
   );
 };

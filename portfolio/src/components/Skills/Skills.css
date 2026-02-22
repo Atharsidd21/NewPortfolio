@@ -13,49 +13,75 @@
   color: #00ff7f;
 }
 
-/* Category */
-.skills-category {
-  margin-bottom: 4rem;
-}
-
-.category-title {
-  font-size: 1.6rem;
-  margin-bottom: 2rem;
-  color: #ccc;
-}
-
-/* Grid */
+/* GRID */
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(160px, 220px));
-  gap: 2rem;
-  justify-content: center;   /* 🔥 centers items */
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 2.5rem;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
-/* Card */
+/* CARD */
 .skill-card {
-  background: #00000081;
-  border-radius: 12px;
+  background: #000000;
   padding: 2rem 1rem;
+  border-radius: 14px;
+
+  border: 1px solid rgba(255, 255, 255, 0.4);
   transition: all 0.3s ease;
-  border: 1px solid #ffffff;
+
 }
 
-.skill-card img {
-  width: 80px;
-  height: 80px;
+/* Icon Container */
+.icon-wrapper {
+  width: 90px;
+  height: 90px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #0a0a0a;
+  transition: all 0.3s ease;
+}
+
+.icon-wrapper img {
+  width: 60px;
+  height: 60px;
   object-fit: contain;
 }
 
 .skill-card p {
-  margin-top: 1rem;
+  margin-top: 1.2rem;
   color: #ccc;
   font-size: 0.95rem;
+  transition: color 0.3s ease;
 }
 
 /* 🔥 Neon Glow Hover */
 .skill-card:hover {
   transform: translateY(-8px);
   border-color: #ffffff;
-  box-shadow: 0 0 50px rgba(255, 255, 255, 0.4);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.6),
+    0 0 25px rgba(255, 255, 255, 0.3);
+}
+
+.skill-card:hover .icon-wrapper {
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.6);
+}
+
+.skill-card:hover p {
+  color: #ffffff;
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+  .skills-grid {
+    gap: 1.5rem;
+  }
+
+  .skill-card {
+    padding: 1.5rem 1rem;
+  }
 }
