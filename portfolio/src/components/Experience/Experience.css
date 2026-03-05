@@ -1,0 +1,135 @@
+.experience {
+  padding: 6rem 1.5rem;
+  background: #000;
+  text-align: center;
+}
+
+.experience-title {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+}
+
+.accent {
+  color: #00ff7f;
+}
+
+/* Timeline */
+
+.timeline {
+  position: relative;
+  max-width: 800px;
+  margin: auto;
+}
+
+/* vertical line */
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  width: 2px;
+  height: 100%;
+  background: rgba(255,255,255,0.2);
+  transform: translateX(-50%);
+}
+
+/* item */
+
+.timeline-item {
+  position: relative;
+  width: 50%;
+  padding: 1.5rem;
+}
+
+/* left side */
+
+.timeline-item:nth-child(odd) {
+  left: 0;
+  text-align: right;
+}
+
+/* right side */
+
+.timeline-item:nth-child(even) {
+  left: 50%;
+  text-align: left;
+}
+
+/* dot */
+
+.timeline-dot {
+  position: absolute;
+  top: 25px;
+  width: 14px;
+  height: 14px;
+  background: white;
+  border-radius: 50%;
+  left: 100%;
+  transform: translateX(-50%);
+}
+
+/* content card */
+
+.timeline-content {
+  background: #111;
+  padding: 1rem;
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,0.3);
+  transition: 0.3s;
+}
+
+.timeline-content:hover {
+  box-shadow:
+    0 0 10px rgba(255,255,255,0.4),
+    0 0 20px rgba(255,255,255,0.2);
+}
+
+/* text */
+
+.timeline-content h3 {
+  color: white;
+}
+
+.timeline-content h4 {
+  color: #ccc;
+  font-weight: normal;
+}
+
+.duration {
+  font-size: 0.8rem;
+  color: #aaa;
+}
+/* hidden state before appearing */
+
+.hidden {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.6s ease;
+}
+
+/* visible state */
+
+.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+  .timeline::before {
+    left: 10px;
+  }
+
+  .timeline-item {
+    width: 100%;
+    left: 0;
+    text-align: left;
+    padding-left: 2.5rem;
+  }
+
+  .timeline-dot {
+    left: 10px;
+  }
+
+}
