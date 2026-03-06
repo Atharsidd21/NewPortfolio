@@ -5,129 +5,145 @@ import anim1 from "../../assets/projects/anim4.png";
 /* PROJECT DATA */
 
 const projectGroups = {
-    "Game Development": [
-        {
-            title: "Shooter Prototype",
-            type: "video",
-            youtubeId: "dQw4w9WgXcQ",
-            tech: ["Unity", "C#"],
-            projectLink: "#"
-        },
-        {
-            title: "Platformer Game",
-            type: "video",
-            youtubeId: "dQw4w9WgXcQ",
-            tech: ["Unity", "Blender"],
-            projectLink: "#"
-        }
-    ],
+  "Game Development": [
+    {
+      title: "Sundered Realms",
+      type: "video",
+      youtubeId: "zBWph5oP-Wk",
+      tech: ["Unity", "C#"],
+      buttons: [
+        { text: "GitHub", link: "https://github.com/Atharsidd21/Sundered-Realms.git" },
+        { text: "Play Demo", link: "https://itch.io/demo-link" }
+      ]
+    },
+     {
+      title: "Shooter Prototype",
+      type: "video",
+      youtubeId: "dQw4w9WgXcQ",
+      tech: ["Unity", "C#"],
+      buttons: [
+        { text: "GitHub", link: "https://github.com/yourrepo" },
+        { text: "Play Demo", link: "https://itch.io/demo-link" }
+      ]
+    },
+     {
+      title: "Shooter Prototype",
+      type: "video",
+      youtubeId: "dQw4w9WgXcQ",
+      tech: ["Unity", "C#"],
+      buttons: [
+        { text: "GitHub", link: "https://github.com/yourrepo" },
+        { text: "Play Demo", link: "https://itch.io/demo-link" }
+      ]
+    },
+     {
+      title: "Shooter Prototype",
+      type: "video",
+      youtubeId: "dQw4w9WgXcQ",
+      tech: ["Unity", "C#"],
+      buttons: [
+        { text: "GitHub", link: "https://github.com/yourrepo" },
+        { text: "Play Demo", link: "https://itch.io/demo-link" }
+      ]
+    },
+     {
+      title: "Shooter Prototype",
+      type: "video",
+      youtubeId: "dQw4w9WgXcQ",
+      tech: ["Unity", "C#"],
+      buttons: [
+        { text: "GitHub", link: "https://github.com/yourrepo" },
+        { text: "Play Demo", link: "https://itch.io/demo-link" }
+      ]
+    },
+     {
+      title: "Shooter Prototype",
+      type: "video",
+      youtubeId: "dQw4w9WgXcQ",
+      tech: ["Unity", "C#"],
+      buttons: [
+        { text: "GitHub", link: "https://github.com/yourrepo" },
+        { text: "Play Demo", link: "https://itch.io/demo-link" }
+      ]
+    }
+  ],
 
-    "3D & Animation": [
-        {
-            title: "Character Animation",
-            type: "image",
-            image: anim1,
-            tech: ["Blender"],
-            projectLink: "#",
-            mediaLink: "#"
+  "3D & Animation": [
+    {
+      title: "Character Animation",
+      type: "image",
+      image: anim1,
+      tech: ["Blender"],
+      buttons: [
+        { text: "ArtStation", link: "https://artstation.com/project" },
+        { text: "View Render", link: "https://drive-link-or-gallery" }
+      ]
+    },
+     {
+      title: "Character Animation",
+      type: "image",
+      image: anim1,
+      tech: ["Blender"],
+      buttons: [
+        { text: "ArtStation", link: "https://artstation.com/project" },
+        { text: "View Render", link: "https://drive-link-or-gallery" }
+      ]
+    },
+     {
+      title: "Character Animation",
+      type: "image",
+      image: anim1,
+      tech: ["Blender"],
+      buttons: [
+        { text: "ArtStation", link: "https://artstation.com/project" },
+        { text: "View Render", link: "https://drive-link-or-gallery" }
+      ]
+    },
+     {
+      title: "Character Animation",
+      type: "image",
+      image: anim1,
+      tech: ["Blender"],
+      buttons: [
+        { text: "ArtStation", link: "https://artstation.com/project" },
+        { text: "View Render", link: "https://drive-link-or-gallery" }
+      ]
+    },
+     {
+      title: "Character Animation",
+      type: "image",
+      image: anim1,
+      tech: ["Blender"],
+      buttons: [
+        { text: "ArtStation", link: "https://artstation.com/project" },
+        { text: "View Render", link: "https://drive-link-or-gallery" }
+      ]
+    },
+     {
+      title: "Character Animation",
+      type: "image",
+      image: anim1,
+      tech: ["Blender"],
+      buttons: [
+        { text: "ArtStation", link: "https://artstation.com/project" },
+        { text: "View Render", link: "https://drive-link-or-gallery" }
+      ]
+    },
+    
+  ],
 
-        },
-        {
-            title: "Character Animation",
-            type: "image",
-            image: anim1,
-            tech: ["Blender"],
-            projectLink: "#",
-            mediaLink: "#"
-
-        },
-        {
-            title: "Character Animation",
-            type: "image",
-            image: anim1,
-            tech: ["Blender"],
-            projectLink: "#",
-            mediaLink: "#"
-
-        },
-        {
-            title: "Gaming Montage",
-            type: "video",
-            youtubeId: "dQw4w9WgXcQ",
-            tech: ["Premiere Pro"],
-            projectLink: "#",
-            mediaLink: "#"
-
-        },
-        {
-            title: "Gaming Montage",
-            type: "video",
-            youtubeId: "dQw4w9WgXcQ",
-            tech: ["Premiere Pro"],
-            projectLink: "#",
-            mediaLink: "#"
-
-        },
-        {
-            title: "Gaming Montage",
-            type: "video",
-            youtubeId: "dQw4w9WgXcQ",
-            tech: ["Premiere Pro"],
-            projectLink: "#",
-            mediaLink: "#"
-
-        }
-    ],
-
-
-    "Video Editing": [
-        {
-            title: "Gaming Montage",
-            type: "video",
-            youtubeId: "dQw4w9WgXcQ",
-            tech: ["Premiere Pro"],
-            projectLink: "#"
-
-
-        },
-        {
-            title: "Gaming Montage",
-            type: "video",
-            youtubeId: "dQw4w9WgXcQ",
-            tech: ["Premiere Pro"],
-            projectLink: "#"
-
-
-        },
-        {
-            title: "Gaming Montage",
-            type: "video",
-            youtubeId: "dQw4w9WgXcQ",
-            tech: ["Premiere Pro"],
-            projectLink: "#"
-        },
-        {
-            title: "Gaming Montage",
-            type: "video",
-            youtubeId: "dQw4w9WgXcQ",
-            tech: ["Premiere Pro"],
-            projectLink: "#"
-        },
-        {
-            title: "Gaming Montage",
-            type: "video",
-            youtubeId: "dQw4w9WgXcQ",
-            tech: ["Premiere Pro"],
-            projectLink: "#"
-        },
-        {
-            title: "Gaming Montage",
-            type: "video",
-            youtubeId: "dQw4w9WgXcQ",
-            tech: ["Premiere Pro"],
-            projectLink: "#"
-        }
-    ]
+  "Video Editing": [
+    {
+      title: "Gaming Montage",
+      type: "video",
+      youtubeId: "VIDEO_ID",
+      tech: ["Premiere Pro"],
+      buttons: [
+        { text: "Watch Video", link: "https://youtube.com/watch?v=VIDEO_ID" },
+        { text: "Project Files", link: "#" }
+      ]
+    }
+  ]
 };
 
 /* PROJECT CARD COMPONENT */
@@ -184,31 +200,18 @@ const ProjectCard = ({ project }) => {
                         <span key={tech}>{tech}</span>
                     ))}
                 </div>
-
                 <div className="project-buttons">
-
-                    <a
-                        href={project.projectLink}
-                        className="project-btn"
-                        target="_blank"
-                        rel="noreferrer"
-                    >
-                        View Project
-                    </a>
-
-                    <a
-                        href={
-                            project.type === "video"
-                                ? `https://youtube.com/watch?v=${project.youtubeId}`
-                                : project.mediaLink
-                        }
-                        className="project-btn secondary"
-                        target="_blank"
-                        rel="noreferrer"
-                    >
-                        {project.type === "video" ? "Watch Video" : "View Media"}
-                    </a>
-
+                    {project.buttons.map((btn, index) => (
+                        <a
+                            key={index}
+                            href={btn.link}
+                            className="project-btn"
+                            target="_blank"
+                            rel="noreferrer"
+                        >
+                            {btn.text}
+                        </a>
+                    ))}
                 </div>
 
             </div>
