@@ -88,3 +88,22 @@
     font-size: 2.4rem;
   }
 }
+@media (max-width: 600px) {
+
+  .home-container {
+    padding-top: 5rem;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .typewriter {
+    font-size: 1.2rem;
+  }
+
+  .home-right img {
+    max-width: 300px;
+  }
+
+}

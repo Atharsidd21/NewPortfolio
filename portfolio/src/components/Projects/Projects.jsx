@@ -1,43 +1,21 @@
 import { useState } from "react";
 import "./Projects.css";
-import FadeIn from "../FadeIn/FadeIn";
+import anim1 from "../../assets/projects/anim4.png";
 
-/* Project Data */
+/* PROJECT DATA */
 
 const projectGroups = {
     "Game Development": [
         {
             title: "Shooter Prototype",
+            type: "video",
             youtubeId: "dQw4w9WgXcQ",
             tech: ["Unity", "C#"],
             projectLink: "#"
         },
         {
             title: "Platformer Game",
-            youtubeId: "dQw4w9WgXcQ",
-            tech: ["Unity", "Blender"],
-            projectLink: "#"
-        },
-        {
-            title: "Platformer Game",
-            youtubeId: "dQw4w9WgXcQ",
-            tech: ["Unity", "Blender"],
-            projectLink: "#"
-        },
-        {
-            title: "Platformer Game",
-            youtubeId: "dQw4w9WgXcQ",
-            tech: ["Unity", "Blender"],
-            projectLink: "#"
-        },
-        {
-            title: "Platformer Game",
-            youtubeId: "dQw4w9WgXcQ",
-            tech: ["Unity", "Blender"],
-            projectLink: "#"
-        },
-        {
-            title: "Platformer Game",
+            type: "video",
             youtubeId: "dQw4w9WgXcQ",
             tech: ["Unity", "Blender"],
             projectLink: "#"
@@ -47,143 +25,199 @@ const projectGroups = {
     "3D & Animation": [
         {
             title: "Character Animation",
-            youtubeId: "dQw4w9WgXcQ",
+            type: "image",
+            image: anim1,
             tech: ["Blender"],
-            projectLink: "#"
+            projectLink: "#",
+            mediaLink: "#"
+
         },
         {
             title: "Character Animation",
-            youtubeId: "dQw4w9WgXcQ",
+            type: "image",
+            image: anim1,
             tech: ["Blender"],
-            projectLink: "#"
+            projectLink: "#",
+            mediaLink: "#"
+
         },
         {
             title: "Character Animation",
-            youtubeId: "dQw4w9WgXcQ",
+            type: "image",
+            image: anim1,
             tech: ["Blender"],
-            projectLink: "#"
+            projectLink: "#",
+            mediaLink: "#"
+
         },
         {
-            title: "Character Animation",
+            title: "Gaming Montage",
+            type: "video",
             youtubeId: "dQw4w9WgXcQ",
-            tech: ["Blender"],
-            projectLink: "#"
+            tech: ["Premiere Pro"],
+            projectLink: "#",
+            mediaLink: "#"
+
         },
         {
-            title: "Character Animation",
+            title: "Gaming Montage",
+            type: "video",
             youtubeId: "dQw4w9WgXcQ",
-            tech: ["Blender"],
-            projectLink: "#"
+            tech: ["Premiere Pro"],
+            projectLink: "#",
+            mediaLink: "#"
+
         },
         {
-            title: "Character Animation",
+            title: "Gaming Montage",
+            type: "video",
             youtubeId: "dQw4w9WgXcQ",
-            tech: ["Blender"],
-            projectLink: "#"
+            tech: ["Premiere Pro"],
+            projectLink: "#",
+            mediaLink: "#"
+
         }
     ],
 
+
     "Video Editing": [
         {
-            title: "Asset Automation Tool",
+            title: "Gaming Montage",
+            type: "video",
             youtubeId: "dQw4w9WgXcQ",
-            tech: ["Python"],
+            tech: ["Premiere Pro"],
+            projectLink: "#"
+
+
+        },
+        {
+            title: "Gaming Montage",
+            type: "video",
+            youtubeId: "dQw4w9WgXcQ",
+            tech: ["Premiere Pro"],
+            projectLink: "#"
+
+
+        },
+        {
+            title: "Gaming Montage",
+            type: "video",
+            youtubeId: "dQw4w9WgXcQ",
+            tech: ["Premiere Pro"],
             projectLink: "#"
         },
         {
-            title: "Asset Automation Tool",
+            title: "Gaming Montage",
+            type: "video",
             youtubeId: "dQw4w9WgXcQ",
-            tech: ["Python"],
+            tech: ["Premiere Pro"],
             projectLink: "#"
         },
         {
-            title: "Asset Automation Tool",
+            title: "Gaming Montage",
+            type: "video",
             youtubeId: "dQw4w9WgXcQ",
-            tech: ["Python"],
+            tech: ["Premiere Pro"],
             projectLink: "#"
         },
         {
-            title: "Asset Automation Tool",
+            title: "Gaming Montage",
+            type: "video",
             youtubeId: "dQw4w9WgXcQ",
-            tech: ["Python"],
-            projectLink: "#"
-        },
-        {
-            title: "Asset Automation Tool",
-            youtubeId: "dQw4w9WgXcQ",
-            tech: ["Python"],
-            projectLink: "#"
-        },
-        {
-            title: "Asset Automation Tool",
-            youtubeId: "dQw4w9WgXcQ",
-            tech: ["Python"],
+            tech: ["Premiere Pro"],
             projectLink: "#"
         }
     ]
 };
 
-/* Video Card Component */
+/* PROJECT CARD COMPONENT */
 
-const VideoCard = ({ project }) => {
+const ProjectCard = ({ project }) => {
     const [play, setPlay] = useState(false);
-
-    const thumbnail = `https://img.youtube.com/vi/${project.youtubeId}/hqdefault.jpg`;
-
 
     return (
         <div className="project-card">
 
-            <div className="video-container">
-                {!play ? (
-                    <div
-                        className="video-thumbnail"
-                        onClick={() => setPlay(true)}
-                    >
-                        <img src={thumbnail} alt={project.title} />
+            {/* VIDEO PROJECT */}
+            {project.type === "video" && (
+                <div className="video-container">
 
-                        <div className="play-button">▶</div>
-                    </div>
-                ) : (
-                    <iframe
-                        src={`https://www.youtube.com/embed/${project.youtubeId}?autoplay=1`}
-                        title={project.title}
-                        allow="autoplay; encrypted-media"
-                        allowFullScreen
-                    ></iframe>
-                )}
-            </div>
+                    {!play ? (
+                        <div
+                            className="video-thumbnail"
+                            onClick={() => setPlay(true)}
+                        >
+                            <img
+                                src={`https://img.youtube.com/vi/${project.youtubeId}/hqdefault.jpg`}
+                                alt={project.title}
+                            />
+
+                            <div className="play-button">▶</div>
+                        </div>
+                    ) : (
+                        <iframe
+                            src={`https://www.youtube.com/embed/${project.youtubeId}?autoplay=1`}
+                            title={project.title}
+                            allow="autoplay; encrypted-media"
+                            allowFullScreen
+                        ></iframe>
+                    )}
+
+                </div>
+            )}
+
+            {/* IMAGE PROJECT */}
+            {project.type === "image" && (
+                <div className="image-container">
+                    <img src={project.image} alt={project.title} />
+                </div>
+            )}
+
+            {/* PROJECT CONTENT */}
 
             <div className="project-content">
+
                 <h3>{project.title}</h3>
 
                 <div className="tech-tags">
-                    {project.tech.map((t) => (
-                        <span key={t}>{t}</span>
+                    {project.tech.map((tech) => (
+                        <span key={tech}>{tech}</span>
                     ))}
                 </div>
 
                 <div className="project-buttons">
-                    <a href={project.projectLink} className="project-btn">
+
+                    <a
+                        href={project.projectLink}
+                        className="project-btn"
+                        target="_blank"
+                        rel="noreferrer"
+                    >
                         View Project
                     </a>
 
                     <a
-                        href={`https://youtube.com/watch?v=${project.youtubeId}`}
+                        href={
+                            project.type === "video"
+                                ? `https://youtube.com/watch?v=${project.youtubeId}`
+                                : project.mediaLink
+                        }
                         className="project-btn secondary"
                         target="_blank"
                         rel="noreferrer"
                     >
-                        Watch Video
+                        {project.type === "video" ? "Watch Video" : "View Media"}
                     </a>
+
                 </div>
+
             </div>
+
         </div>
     );
-
 };
 
-/* Projects Section */
+/* PROJECT SECTION */
 
 const Projects = () => {
     return (
@@ -195,17 +229,20 @@ const Projects = () => {
 
             {Object.entries(projectGroups).map(([category, projects]) => (
                 <div className="project-category" key={category}>
-                    <FadeIn>
-                        <h3 className="category-title">{category}</h3>
 
-                        <div className="projects-grid">
-                            {projects.map((project) => (
-                                <VideoCard key={project.title} project={project} />
-                            ))}
-                        </div>
-                    </FadeIn>
+                    <h3 className="category-title">{category}</h3>
+
+                    <div className="projects-grid">
+
+                        {projects.map((project, index) => (
+                            <ProjectCard key={index} project={project} />
+                        ))}
+
+                    </div>
+
                 </div>
             ))}
+
         </section>
     );
 };
