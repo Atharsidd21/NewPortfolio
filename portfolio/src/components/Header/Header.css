@@ -17,8 +17,9 @@
   padding: 1rem 1.5rem;
 
   display: flex;
-  justify-content: space-between;
   align-items: center;
+
+  position: relative; /* needed for centering nav links */
 }
 
 /* LEFT - LOGO */
@@ -37,6 +38,10 @@
 /* CENTER - NAV LINKS */
 
 .nav-center {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+
   display: flex;
   gap: 2rem;
   list-style: none;
@@ -57,6 +62,7 @@
 /* RIGHT - BUTTON AREA */
 
 .nav-right {
+  margin-left: auto;
   display: flex;
   align-items: center;
 }
@@ -85,6 +91,7 @@
     position: absolute;
     top: 70px;
     left: 0;
+    transform: none;
 
     width: 100%;
     background: #ffffff;
@@ -97,7 +104,6 @@
 
     border-bottom: 1px solid #ddd;
 
-    /* dropdown animation */
     max-height: 0;
     overflow: hidden;
     opacity: 0;

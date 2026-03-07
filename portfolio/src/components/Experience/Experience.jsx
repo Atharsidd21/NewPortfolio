@@ -1,51 +1,41 @@
-import { useEffect, useRef } from "react";
 import "./Experience.css";
-import FadeIn from "../FadeIn/FadeIn";
 
 const experiences = [
   {
     role: "Game Developer Intern",
-    company: "Studio / Company Name",
-    duration: "2024",
-    description:
-      "Worked on gameplay mechanics, enemy AI behaviour, and UI systems using Unity and C#."
+    company: "Studio Name",
+    year: "2024",
+    points: [
+      "Developed gameplay mechanics using Unity and C#",
+      "Implemented enemy AI behaviour systems",
+      "Built UI systems and integrated game menus",
+      "Optimized gameplay performance and debugging"
+    ]
   },
   {
     role: "Freelance 3D Artist",
     company: "Independent Work",
-    duration: "2023",
-    description:
-      "Created environment assets, character animations, and optimized 3D models for game engines."
+    year: "2023",
+    points: [
+      "Created environment assets and 3D models",
+      "Produced character animations using Blender",
+      "Optimized models for real-time game engines",
+      "Delivered assets for indie game projects"
+    ]
   },
   {
     role: "Video Editor",
     company: "Freelance Projects",
-    duration: "2022",
-    description:
-      "Edited gaming trailers and promotional content using Adobe Premiere Pro."
+    year: "2022",
+    points: [
+      "Edited gaming videos and promotional content",
+      "Worked with motion graphics and transitions",
+      "Produced high-quality video edits for creators"
+    ]
   }
 ];
 
 const Experience = () => {
-  const itemsRef = useRef([]);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("show");
-          }
-        });
-      },
-      { threshold: 0.2 }
-    );
-
-    itemsRef.current.forEach((el) => observer.observe(el));
-
-    return () => observer.disconnect();
-  }, []);
-
   return (
     <section className="experience" id="experience">
 
@@ -53,23 +43,23 @@ const Experience = () => {
         My <span className="accent">Experience</span>
       </h2>
 
-      <div className="timeline">
+      <div className="experience-list">
 
         {experiences.map((exp, index) => (
-          <div
-            className="timeline-item hidden"
-            key={index}
-            ref={(el) => (itemsRef.current[index] = el)}
-          >
+          <div className="experience-item" key={index}>
 
-            <div className="timeline-dot"></div>
-
-            <div className="timeline-content">
+            <div className="experience-header">
               <h3>{exp.role}</h3>
-              <h4>{exp.company}</h4>
-              <span className="duration">{exp.duration}</span>
-              <p>{exp.description}</p>
+              <span>{exp.year}</span>
             </div>
+
+            <h4>{exp.company}</h4>
+
+            <ul>
+              {exp.points.map((point, i) => (
+                <li key={i}>{point}</li>
+              ))}
+            </ul>
 
           </div>
         ))}

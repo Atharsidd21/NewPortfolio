@@ -136,7 +136,57 @@ const projectGroups = {
     {
       title: "Gaming Montage",
       type: "video",
-      youtubeId: "VIDEO_ID",
+      youtubeId: "dQw4w9WgXcQ",
+      tech: ["Premiere Pro"],
+      buttons: [
+        { text: "Watch Video", link: "https://youtube.com/watch?v=VIDEO_ID" },
+        { text: "Project Files", link: "#" }
+      ]
+    },
+     {
+      title: "Gaming Montage",
+      type: "video",
+      youtubeId: "dQw4w9WgXcQ",
+      tech: ["Premiere Pro"],
+      buttons: [
+        { text: "Watch Video", link: "https://youtube.com/watch?v=VIDEO_ID" },
+        { text: "Project Files", link: "#" }
+      ]
+    },
+     {
+      title: "Gaming Montage",
+      type: "video",
+      youtubeId: "dQw4w9WgXcQ",
+      tech: ["Premiere Pro"],
+      buttons: [
+        { text: "Watch Video", link: "https://youtube.com/watch?v=VIDEO_ID" },
+        { text: "Project Files", link: "#" }
+      ]
+    },
+     {
+      title: "Gaming Montage",
+      type: "video",
+      youtubeId: "dQw4w9WgXcQ",
+      tech: ["Premiere Pro"],
+      buttons: [
+        { text: "Watch Video", link: "https://youtube.com/watch?v=VIDEO_ID" },
+        { text: "Project Files", link: "#" }
+      ]
+    },
+     {
+      title: "Gaming Montage",
+      type: "video",
+      youtubeId: "dQw4w9WgXcQ",
+      tech: ["Premiere Pro"],
+      buttons: [
+        { text: "Watch Video", link: "https://youtube.com/watch?v=VIDEO_ID" },
+        { text: "Project Files", link: "#" }
+      ]
+    },
+     {
+      title: "Gaming Montage",
+      type: "video",
+      youtubeId: "dQw4w9WgXcQ",
       tech: ["Premiere Pro"],
       buttons: [
         { text: "Watch Video", link: "https://youtube.com/watch?v=VIDEO_ID" },

@@ -19,7 +19,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
   gap: 2rem;
-  max-width: 700px;
+  max-width: 900px;
   margin: 0 auto;
 }
 
@@ -27,19 +27,19 @@
 
 .contact-card {
   background: #111;
-  border: 1px solid rgba(255,255,255,0.3);
+  border: 1px solid rgba(255,255,255,0.2);
   border-radius: 14px;
+
   padding: 2rem 1rem;
+
   text-decoration: none;
   color: white;
-  transition: all 0.3s ease;
-}
 
-.contact-card:hover {
-  transform: translateY(-6px);
-  box-shadow:
-    0 0 10px rgba(255,255,255,0.4),
-    0 0 25px rgba(255,255,255,0.2);
+  transition: all 0.3s ease;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* ICON */
@@ -47,8 +47,127 @@
 .contact-icon {
   font-size: 36px;
   margin-bottom: 10px;
+  transition: color 0.3s ease;
 }
 
+/* TEXT */
+
+.contact-card p {
+  font-size: 0.9rem;
+}
+
+/* HOVER EFFECTS */
+
+.contact-card:hover {
+  transform: translateY(-6px);
+}
+
+/* Instagram */
+.contact-card.instagram:hover {
+  border-color: #E1306C;
+  box-shadow: 0 0 15px #E1306C66;
+}
+
+.contact-card.instagram:hover .contact-icon,
+.contact-card.instagram:hover p {
+  color: #E1306C;
+}
+/* LinkedIn */
+
+.contact-card.linkedin:hover {
+  border-color: #0A66C2;
+  box-shadow: 0 0 15px #0A66C266;
+}
+
+.contact-card.linkedin:hover .contact-icon,
+.contact-card.linkedin:hover p {
+  color: #0A66C2;
+}
+
+/* YouTube */
+
+.contact-card.youtube:hover {
+  border-color: #FF0000;
+  box-shadow: 0 0 15px #FF000066;
+}
+
+.contact-card.youtube:hover .contact-icon,
+.contact-card.youtube:hover p {
+  color: #FF0000;
+}
+/* Twitter */
+
+.contact-card.twitter:hover {
+  border-color: #1DA1F2;
+  box-shadow: 0 0 15px #1DA1F266;
+}
+
+.contact-card.twitter:hover .contact-icon,
+.contact-card.twitter:hover p {
+  color: #1DA1F2;
+}
+
+
+
+/* WhatsApp */
+
+.contact-card.whatsapp:hover {
+  border-color: #25D366;
+  box-shadow: 0 0 15px #25D36666;
+}
+
+.contact-card.whatsapp:hover .contact-icon,
+.contact-card.whatsapp:hover p {
+  color: #25D366;
+}
+
+/* GitHub */
+
+.contact-card.github:hover {
+  border-color: #ffffff;
+  box-shadow: 0 0 15px #ffffff66;
+}
+
+.contact-card.github:hover .contact-icon,
+.contact-card.github:hover p {
+  color: #ffffff;
+}
+
+/* Mail */
+
+.contact-card.mail:hover {
+  border-color: #EA4335;
+  box-shadow: 0 0 15px #EA433566;
+}
+
+.contact-card.mail:hover .contact-icon,
+.contact-card.mail:hover p {
+  color: #EA4335;
+}
+
+/* Discord */
+
+.contact-card.discord:hover {
+  border-color: #5865F2;
+  box-shadow: 0 0 15px #5865F266;
+}
+
+.contact-card.discord:hover .contact-icon,
+.contact-card.discord:hover p {
+  color: #5865F2;
+}
+
+/* Itch */
+
+.contact-card.itch:hover {
+  border-color: #FA5C5C;
+  box-shadow: 0 0 15px #FA5C5C66;
+}
+
+.contact-card.itch:hover .contact-icon,
+.contact-card.itch:hover p {
+  color: #FA5C5C;
+}
 /* MOBILE */
 
 @media (max-width: 768px) {
